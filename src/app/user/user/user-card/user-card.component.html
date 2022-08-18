@@ -1,0 +1,15 @@
+<div class="cart-container">
+  <mat-card *ngIf="userData">
+    <mat-card-header>
+      <mat-card-title>
+       <h3><b>{{userData.name + ' ' + userData.surname}}</b></h3>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Age: <span>{{userData.age}}</span></p>
+      <p>Occupation: <span>{{userData.occupation}}</span></p>
+      <p>Salary Type: <span>{{userData.salaryType}}</span></p>
+    </mat-card-content>
+  </mat-card>
+
+</div>
