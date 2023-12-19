@@ -1,0 +1,16 @@
+<div class="container" >
+  <form class="form-container" [formGroup]="cityForm" (ngSubmit)="onSubmit()">
+    <h1>Weather App</h1>
+    <div class="input-container">
+      <input type="text" id="inputName" formControlName="name" placeholder="Enter a city"
+             [ngClass]="{ 'invalid-input': cityForm.get('name')?.invalid && cityForm.get('name')?.touched }">
+
+      <small *ngIf="cityForm.get('name')?.errors?.required && cityForm.get('name')?.invalid && cityForm.get('name')?.touched">
+        This field is required.
+      </small>
+    </div>
+
+    <button class="button-primary" type="submit" [disabled]="cityForm.invalid">Search</button>
+  </form>
+</div>
+

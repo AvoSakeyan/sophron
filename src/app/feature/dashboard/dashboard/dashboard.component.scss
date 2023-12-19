@@ -1,0 +1,56 @@
+.main-container {
+  background-image: url('./../../../../assets/images/img_3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Set the height to fill the viewport */
+  margin: 0; /* Remove default margin */
+  padding: 0;
+}
+
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+  padding: 20px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.6); /* Set the background color to be transparent */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adjust the alpha value here for the box shadow transparency */
+  position: absolute;
+  top: 30%;
+  overflow: unset;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.city {
+  font-size: 50px;
+  font-weight: 700;
+  color: #4B6D99;
+}
+
+.current-temp {
+  font-size: 150px;
+  line-height: normal;
+  font-weight: 700;
+  color: #4B6D99;
+}
+
+.humidity, .status {
+  font-size: 20px;
+  font-weight: 700;
+  color: #4B6D99;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .city {
+    font-size: 35px;
+  }
+  .current-temp {
+    font-size: 50px;
+  }
+}

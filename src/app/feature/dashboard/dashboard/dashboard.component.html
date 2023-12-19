@@ -1,0 +1,13 @@
+<div class="main-container">
+  <div class="dashboard-container" *ngIf="weatherData$ | async as cityWeather">
+    <h1 class="city">{{cityWeather.name}}</h1>
+    <div class="current-temp">{{cityWeather.main.temp}}</div>
+    <div class="status">
+      {{cityWeather.weather[0].main}}
+    </div>
+    <div class="humidity">
+      Humidity:
+        {{cityWeather.main.humidity}} %
+    </div>
+  </div>
+</div>

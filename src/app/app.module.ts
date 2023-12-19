@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from "@angular/material/tabs";
 import { SharedModule } from "./shared/shared.module";
+import {NgxsModule} from "@ngxs/store";
+import * as State from './shared/state'
+import {FeatureModule} from "./feature/feature.module";
 
 @NgModule({
   declarations: [
@@ -17,6 +20,10 @@ import { SharedModule } from "./shared/shared.module";
     BrowserAnimationsModule,
     MatTabsModule,
     SharedModule,
+    FeatureModule,
+    NgxsModule.forRoot([
+      State.WeatherState
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

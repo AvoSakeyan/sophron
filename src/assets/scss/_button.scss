@@ -1,0 +1,22 @@
+////////// Primary button ////////
+.button-primary {
+  background: #4B6D99;
+  border: 1px solid #4B6D99;
+  color: #fff;
+
+  &:hover:enabled {
+    background: #0070BC;
+    border: 1px solid #0070BC;
+  }
+
+  &:focus:enabled {
+    background: #445F8A;
+    border-radius: 4px;
+    box-shadow: 0 0 0 4px #e0f2fe, 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+  }
+
+  &:disabled {
+    background: #D0D9E5;
+    border: 1px solid #D0D9E5;
+  }
+}
